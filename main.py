@@ -11,8 +11,7 @@ AGENTS = [
     ("Human", ConsoleInputAgent), #ConsoleInputAgent
     ("Random_Agent", RandomAgent),
     ("DFS_Agent", DFS_Agent),
-    ("Alpha_Beta", Alpha_Beta),
-    ("My_Agent", My_Agent)
+    ("Alpha_Beta", Alpha_Beta)
 ]
 
 def _pick_agent(player):
