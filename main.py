@@ -3,7 +3,6 @@ from tic_tac_toe.agents.console_input_agent import ConsoleInputAgent
 from tic_tac_toe.agents.random_agent import RandomAgent
 from tic_tac_toe.agents.dfs_agent import DFS_Agent
 from tic_tac_toe.agents.alpha_beta import Alpha_Beta
-from tic_tac_toe.agents.my_agent import My_Agent
 from tic_tac_toe.board import Board 
 import numpy as np
 
@@ -49,13 +48,7 @@ def main():
         game.play()
         print("check", Game.end_value)
         play = input("Play again? y/[n]: ")
-    """
-    count = 0
-    while count < 10000:
-        game = Game(player_x, player_o)
-        game.play()
-        count += 1
-    """
+  
     print ("Averge move time for x: ", x_average_move_time())
     print ("Averge move time for o: ", o_average_move_time())
     
